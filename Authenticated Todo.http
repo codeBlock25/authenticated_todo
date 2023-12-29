@@ -1,0 +1,110 @@
+# Authenticated Todo
+@base_url=http://localhost:3000/api
+@token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjlkZWY4ODRjLTAwMDYtNDhlNi1hMTg0LWY5MDhmYjE1ZGQ1MyIsImlhdCI6MTcwMzcyMzMzNywiZXhwIjoxNzA0MzI4MTM3fQ.h3fmgFd0bIFiQbgRMF_p8y7644Pbjhk2GC7P30PFFbk
+@test_email=amosdaniel.dev@gmail.com
+@test_passwprd=Password#23
+
+###
+# group: Auth
+# @name login
+POST {{base_url}}/auth/login
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "email": "{{test_email}}",
+    "password": "{{test_passwprd}}"
+}
+
+###
+# group: Auth
+# @name register
+POST {{base_url}}/auth/register
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "full_name": "Daniel Amos",
+    "email": "{{test_email}}",
+    "password": "{{test_passwprd}}"
+}
+
+###
+# group: users
+# @name get users
+GET {{base_url}}/user
+Authorization: Bearer {{token}}
+
+###
+# group: users
+# @name get user
+GET {{base_url}}/user/8737e0e9-87d8-434d-9721-8045adb29f6f
+Authorization: Bearer {{token}}
+
+###
+# group: users
+# @name update user
+PATCH {{base_url}}/user/c7e0a0c2-6eb3-4abf-acec-1769982f6ac9
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "full_name": "boss"
+}
+
+###
+# group: users
+# @name delete user
+DELETE {{base_url}}/user/8737e0e9-87d8-434d-9721-8045adb29f6f
+Authorization: Bearer {{token}}
+
+###
+# group: Todo
+# @name create todo
+POST {{base_url}}/todo
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Start an API with rust and axum"
+}
+
+###
+# group: Todo
+# @name get todo
+GET {{base_url}}/todo/51636943-ff69-4f77-be58-08e5010ef78a
+Authorization: Bearer {{token}}
+
+###
+# group: Todo
+# @name get todos
+GET {{base_url}}/todo
+Authorization: Bearer {{token}}
+
+###
+# group: Todo
+# @name edit todo
+PATCH {{base_url}}/todo/51636943-ff69-4f77-be58-08e5010ef78a
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Complete an API with Rust and axum"
+}
+
+###
+# group: Todo
+# @name toggle todo
+PUT {{base_url}}/todo/51636943-ff69-4f77-be58-08e5010ef78a
+Authorization: Bearer {{token}}
+
+###
+# group: Todo
+# @name delete todo
+DELETE {{base_url}}/todo/c5e50a40-3d77-4210-8a3e-e2792ec9c05c
+Authorization: Bearer {{token}}
+
+###
+# @name API status
+GET {{base_url}}/status
+Authorization: Bearer {{token}}

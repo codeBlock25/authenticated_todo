@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/migration/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/async-trait-5d60f4ae414acc94/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/crossbeam-utils-4a6faee89238a15e/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/libc-6a41885b232ee9c7/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/proc-macro-error-46e2fd77430bff74/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/proc-macro-error-attr-0b5cd76c44a6cd64/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/proc-macro2-a748f4e22194062a/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/rustix-7aa5cddde2dcd882/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/serde-749c374ece9f6e6c/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/build/syn-27f38038e38f47e2/out" />
+      <excludeFolder url="file://$MODULE_DIR$/migration/target/debug/examples" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
