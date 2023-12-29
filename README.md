@@ -46,7 +46,7 @@ The following are steps to run the code base
 	    ```
 
 ## Config
-The following has to be add to env or be added by using a .env file at the root of the program
+The following has to be added to env or be added by using a .env file at the root of the program
 ```env
 PORT=3000# Port API should listen on
 RUST_LOG=authenticated_todo# flag to display logs
