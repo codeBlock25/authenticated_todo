@@ -1,0 +1,24 @@
+[package]
+name = "authenticated_todo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.7.2"
+tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"] }
+log = "0.4.20"
+serde = { version = "1.0.193", features = ["derive"] }
+validator = { version = "0.16.1", features = ["derive"] }
+axum-valid = { version = "0.13.0", features = ["into_json"] }
+dotenv = "0.15.0"
+tower-http = { version = "0.5.0", features = ["cors"] }
+tower = { version = "0.4.13", features = ["full"] }
+serde_json = "1.0.108"
+utoipa = { version = "4.1.0", features = ["axum_extras"] }
+env_logger = "0.10.1"
+sea-orm = { version = "0.12.10", features = ["runtime-tokio-native-tls", "sqlx-postgres", "uuid"] }
+jsonwebtoken = "9.2.0"
+uuid = { version = "1.6.1", features = ["v1", "v3", "v4", "v5", "v6", "v7", "serde"] }
+chrono = { version = "0.4.31", features = ["serde"] }
